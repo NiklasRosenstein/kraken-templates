@@ -1,0 +1,10 @@
+plugin "python-isort" {
+    config_file = DIRECTORY / '.isort.cfg'
+}
+plugin "python-flake8" {
+    config_file = DIRECTORY / 'flake8.ini'
+}
+plugin "python-mypy" {
+    config_file = DIRECTORY / 'mypy.ini'
+}
+plugin "python-pytest"
