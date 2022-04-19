@@ -5,4 +5,4 @@ apply "kraken.contrib.python.pytest"
 
 isort.config_file DIRECTORY / '.isort.cfg'
 flake8.config_file DIRECTORY / 'flake8.ini'
-mypy config_file DIRECTORY / 'mypy.ini'
+mypy.config_file DIRECTORY / 'mypy.ini'
