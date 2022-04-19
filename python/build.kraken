@@ -1,10 +1,8 @@
-plugin "python/isort" {
-    config_file = DIRECTORY / '.isort.cfg'
-}
-plugin "python/flake8" {
-    config_file = DIRECTORY / 'flake8.ini'
-}
-plugin "python/mypy" {
-    config_file = DIRECTORY / 'mypy.ini'
-}
-plugin "python/pytest"
+apply "kraken.contrib.python.isort"
+apply "kraken.contrib.python.flake8"
+apply "kraken.contrib.python.mypy"
+apply "kraken.contrib.python.pytest"
+
+isort.config_file DIRECTORY / '.isort.cfg'
+flake8.config_file DIRECTORY / 'flake8.ini'
+mypy config_file DIRECTORY / 'mypy.ini'
